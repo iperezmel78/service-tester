@@ -1,2 +1,2 @@
 # service-tester
-Project to test microservices deployed in openshift
+Project to test microservices deployed on openshift
