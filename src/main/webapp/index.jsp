@@ -39,8 +39,9 @@
                         $("#cant").val("");
                         doAjax($("#type").val(), true);
                     } else {
+                        var max = 999;
                         $("#aDiv").html("");
-                        $("#cant").val($("#cant").val() > 999 ? 999 : $("#cant").val() === "" ? 10 : $("#cant").val());
+                        $("#cant").val($("#cant").val() > max ? max : $("#cant").val() === "" ? 10 : $("#cant").val());
                         counter = 0;
                         var calls = [];
                         for (var i = 0; i < $("#cant").val(); i++) {
