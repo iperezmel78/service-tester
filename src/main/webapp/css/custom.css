@@ -1,0 +1,13 @@
+.hidden {display: none}
+.visible {display: block}
+.ui-state-highlight {
+    border: 1px solid #CEF199;
+    background: #F3FDDF;
+    color: #545F3F;
+}
+.ui-widget-overlay {
+    background: #AAA;
+    opacity: .30;
+    filter: Alpha(Opacity=30);
+}
+.ui-dialog-titlebar-close {display: none}
