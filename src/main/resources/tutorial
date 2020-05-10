@@ -1,0 +1,9 @@
+$ oc new-build --binary --name=service-tester -l app=service-tester
+$ oc start-build service-tester --from-dir=. --follow
+$ oc new-app service-tester -l app=service-tester  <- deploy pod
+$ oc expose service service-tester <- expose service
+
+
+----- from war file -----
+$ oc new-build --binary --name=service-tester -l app=service-tester
+$ oc start-build service-tester --from-file=service-tester-1.0-SNAPSHOT.war
